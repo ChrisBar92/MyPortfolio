@@ -3,20 +3,27 @@ import { NavMenu } from './NavMenu'
 import React, { useState } from 'react'
 
 const Header = () => {
-	// const [clicked, setClicked] = useState(false)
+	const [clicked, setClicked] = useState(false)
+	const [color, setColor] = useState(false)
 
-	// handleClick = () => setClicked(!clicked)
+	const handleClick = () => setClicked(!clicked)
+	const changeColor = () => {
+		window.scrollY >= 100 ? setColor(true) : setColor(false)
+	}
+
+	window.addEventListener('scroll', changeColor)
+
 	return (
-		<header className="header">
-			<nav className="nav container">
+		<nav className='nav'>
+			<div className={color ? 'nav__container container nav__background' : 'nav__container container'}>
 				<a href="index.html" className="nav__logo">
 					Portfolio
-					<i class="navbar__icon fa-solid fa-house"></i>
+					<i class="fa-solid fa-house"></i>
 				</a>
-				<div className="nav__burger">
-					<i className="fas fa-bars"></i>
+				<div className="nav__burger" onClick={handleClick}>
+					{clicked ? <i class="fa-solid fa-times"></i> : <i className="fas fa-bars"></i>}
 				</div>
-				<ul className="nav__list">
+				<ul className={clicked ? 'nav__list active' : 'nav__list'}>
 					{NavMenu.map(item => {
 						return (
 							<li key={item.id}>
@@ -28,20 +35,9 @@ const Header = () => {
 						)
 					})}
 				</ul>
-			</nav>
-		</header>
+			</div>
+		</nav>
 	)
 }
 
 export default Header
-
-// <nav className="navbar">
-// 	<h1 className="navbar__title">
-// 		Portfolio <i class="navbar__icon fa-regular fa-circle-user"></i>
-// 	</h1>
-//     <ul>
-//         <li>
-
-//         </li>
-//     </ul>
-// </nav>
