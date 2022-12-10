@@ -58,9 +58,13 @@ a {
 }
 
 .section__title {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
 	font-size: 5rem;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 200;
 	text-align: center;
 	color: #fff;
 	border-bottom: 3px solid #84a98c;

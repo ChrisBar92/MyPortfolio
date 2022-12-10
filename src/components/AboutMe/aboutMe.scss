@@ -1,9 +1,10 @@
 .about {
+	position: relative;
+	width: 100%;
+	padding-top: 20rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
-	// padding-top: 10rem;
 
 	&__box {
 		width: 60%;
@@ -19,6 +20,13 @@
 
 			i {
 				padding-left: 3rem;
+				transition: transform 0.5s;
+			}
+		}
+
+		&--name:hover {
+			i {
+				transform: scale(1.5);
 			}
 		}
 
