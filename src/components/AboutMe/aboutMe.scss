@@ -1,0 +1,146 @@
+.about {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	// padding-top: 10rem;
+
+	&__box {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #fff;
+
+		&--name {
+			font-size: 4rem;
+			padding: 2rem;
+			animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 5s reverse both;
+
+			i {
+				padding-left: 3rem;
+			}
+		}
+
+		&--title {
+			font-size: 2.8rem;
+			padding: 1rem 0;
+			position: relative;
+			animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 5.5s reverse both;
+		}
+
+		&--title::before,
+		&--title::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			height: 0.2rem;
+			width: 7rem;
+			background-color: #fff;
+			transform: translateY(-50%);
+		}
+		&--title::before {
+			left: -30%;
+		}
+		&--title::after {
+			right: -30%;
+		}
+
+		&--description {
+			text-align: center;
+			font-size: 1.4rem;
+			font-weight: 200;
+			padding: 2rem;
+			animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 6s reverse both;
+
+			.technologies--list {
+				padding-top: 2rem;
+				text-align: center;
+
+				li {
+					width: 100%;
+					font-weight: bold;
+				}
+			}
+		}
+
+		&--btn {
+			animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 6.5s reverse both;
+		}
+	}
+
+	&__photo {
+		width: 30%;
+		animation: fade-out 1s linear 4s reverse both;
+
+		&--avatar {
+			border-radius: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&__box {
+			width: 100%;
+			order: 2;
+
+			&--name {
+				font-size: 2.6rem;
+				padding: 4rem 0;
+			}
+
+			&--title {
+				font-size: 2.2rem;
+			}
+			&--title::before {
+				left: -25%;
+				width: 5rem;
+			}
+			&--title::after {
+				right: -25%;
+				width: 5rem;
+			}
+		}
+
+		&__photo {
+			width: 100%;
+			order: 1;
+			display: flex;
+			justify-content: center;
+
+			img {
+				width: 50%;
+				height: auto;
+			}
+		}
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		transform: translateZ(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateZ(-8rem);
+		opacity: 0;
+	}
+}
+
+@keyframes tracking-out {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+	}
+}

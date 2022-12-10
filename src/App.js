@@ -1,16 +1,16 @@
 import './base.scss'
-import Header from "./components/Header";
-import HeroImage from './components/HeroImage';
-
+import Navbar from './components/Navbar'
+import Header from './components/Header'
+import AboutMe from './components/AboutMe'
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <HeroImage/>
-  
-    </div>
-  );
+	return (
+		<div className="App">
+			<Navbar />
+			<Header />
+			<AboutMe />
+		</div>
+	)
 }
 
-export default App;
+export default App
