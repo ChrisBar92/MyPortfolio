@@ -38,16 +38,24 @@
 	}
 
 	&__item {
-		padding: 3rem;
-		transition: background-color 0.3s;
+		transition: transform 0.3s;
 
+		&--link {
+			padding: 3rem;
+			transition: color 0.3s;
+			cursor: pointer;
+		}
 		i {
 			padding-right: 1rem;
 		}
 	}
 
 	&__item:hover {
-		background-color: #52796f;
+		transform: scale(1.2);
+	}
+
+	&__item--link:hover {
+		color: #84a98c;
 	}
 
 	&__burger {

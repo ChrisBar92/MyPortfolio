@@ -1,6 +1,7 @@
 import './navbar.scss'
-import { NavMenu } from './NavMenu'
+// import { NavMenu } from './NavMenu'
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
 	// klikanie w menu hamburgerowe
@@ -17,7 +18,7 @@ const Navbar = () => {
 	window.addEventListener('scroll', changeColor)
 
 	return (
-		<nav className='nav'>
+		<nav className="nav">
 			<div className={color ? 'nav__container container nav__background' : 'nav__container container'}>
 				<a href="/" className="nav__logo">
 					Portfolio
@@ -27,7 +28,22 @@ const Navbar = () => {
 					{clicked ? <i class="fa-solid fa-times"></i> : <i className="fas fa-bars"></i>}
 				</div>
 				<ul className={clicked ? 'nav__list active' : 'nav__list'}>
-					{NavMenu.map(item => {
+					<li className={'nav__item'}>
+						<Link activeClass="active" className="nav__item--link" to="about" offset={-80} duration={300}>
+							<i class="fa-solid fa-circle-info"></i>O mnie
+						</Link>
+					</li>
+					<li className="nav__item">
+						<Link activeClass="active" className="nav__item--link" to="about" offset={-80} duration={300}>
+							<i class="fa-solid fa-briefcase"></i>Projekty
+						</Link>
+					</li>
+					<li className="nav__item">
+						<Link activeClass="active" className="nav__item--link" to="about" offset={-80} duration={300}>
+							<i class="fa-regular fa-address-card"></i>Kontakt
+						</Link>
+					</li>
+					{/* {NavMenu.map(item => {
 						return (
 							<li key={item.id}>
 								<a href={item.url} className={item.nameClass}>
@@ -36,7 +52,7 @@ const Navbar = () => {
 								</a>
 							</li>
 						)
-					})}
+					})} */}
 				</ul>
 			</div>
 		</nav>
