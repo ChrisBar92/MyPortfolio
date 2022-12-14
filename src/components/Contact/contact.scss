@@ -1,0 +1,114 @@
+.contact {
+	position: relative;
+	width: 100%;
+	padding-top: 20rem;
+	padding-bottom: 10rem;
+
+	&__box {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		&--social {
+			width: 30%;
+
+			.social__card {
+				width: 100%;
+				margin: 2rem 0;
+				color: #fff;
+				border: 2px solid #fff;
+				border-radius: 1rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				.icon {
+					font-size: 4rem;
+					padding-top: 1rem;
+				}
+
+				&--title {
+					font-size: 1.8rem;
+					font-weight: bold;
+				}
+
+				&--user {
+					font-weight: 200;
+					font-size: 1.6rem;
+				}
+
+				&--btn {
+					a {
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+
+		.form {
+			width: 60%;
+			text-align: center;
+            
+			p {
+                color: #fff;
+				font-size: 2.8rem;
+			}
+
+			form {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				input,
+				textarea {
+					height: 1rem;
+					width: 70%;
+					padding: 2rem 1rem;
+					border-radius: 1rem;
+                    border: 2px solid #fff;
+					background-color: transparent;
+					margin: 1rem 0;
+					font-weight: 600;
+                    color: #fff;
+
+					&::placeholder {
+						color: #fff;
+						opacity: 0.5;
+					}
+				}
+
+                label {
+                    color: #fff;
+                    font-size: 1.4rem;
+                    margin-top: 2rem;
+                }
+
+				textarea {
+					height: 15rem;
+					resize: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:768px) {
+    .contact__box {
+        flex-direction: column;
+        align-items: center;
+
+        &--social {
+            width: 70%;
+
+            .social__card {
+                margin-bottom: 3rem;
+            }
+        }
+.form {
+    width: 100%;
+}
+
+    }
+}

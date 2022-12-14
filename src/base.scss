@@ -12,7 +12,6 @@ html {
 body {
 	font-family: 'Poppins', sans-serif;
 	background-color: #2f3e46;
-	height: 300vh;
 }
 
 .container {
@@ -41,8 +40,9 @@ a {
 	border: none;
 	outline: none;
 	overflow: hidden;
-	transition: .3s;
+	transition: 0.3s;
 	border: 1px solid #fff;
+	color: #fff;
 }
 .btn::before {
 	content: '';
@@ -51,7 +51,7 @@ a {
 	left: -30%;
 	height: 120%;
 	width: 20%;
-	transition:0.5s;
+	transition: 0.5s;
 	transform: rotate(20deg);
 	background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
 }
@@ -65,7 +65,7 @@ a {
 
 .section__title {
 	position: absolute;
-	top: 5%;
+	top: 5rem;
 	left: 50%;
 	transform: translateX(-50%);
 	font-size: 5rem;

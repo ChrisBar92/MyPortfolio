@@ -7,12 +7,12 @@ const Navbar = () => {
 	// klikanie w menu hamburgerowe
 	const [clicked, setClicked] = useState(false)
 	// zmiana koloru na navbarze przy scrollowaniu
-	const [color, setColor] = useState(false)
+	const [color, setColor] = useState('nav__container container')
 
 	// setClicked przyjmuje wartość logiczną inną niż clicked
 	const handleClick = () => setClicked(!clicked)
 	const changeColor = () => {
-		window.scrollY >= 100 ? setColor(true) : setColor(false)
+		window.scrollY >= 100 ? setColor('nav__container container nav__background') : setColor('nav__container container')
 	}
 
 	window.addEventListener('scroll', changeColor)
