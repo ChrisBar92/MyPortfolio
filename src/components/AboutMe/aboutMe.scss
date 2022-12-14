@@ -2,6 +2,7 @@
 	position: relative;
 	width: 100%;
 	padding-top: 20rem;
+	padding-bottom: 10rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -14,10 +15,9 @@
 		color: #fff;
 
 		&--name {
-			position: relative;
 			font-size: 4rem;
 			padding: 2rem;
-			animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s reverse both;
+			// animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s reverse both;
 
 			i {
 				padding-left: 3rem;
@@ -37,7 +37,7 @@
 			font-size: 2.8rem;
 			padding: 1rem 0;
 			position: relative;
-			animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2.5s reverse both;
+			// animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2.5s reverse both;
 		}
 
 		&--title::before,
@@ -62,7 +62,7 @@
 			font-size: 1.4rem;
 			font-weight: 200;
 			padding: 2rem;
-			animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3s reverse both;
+			// animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3s reverse both;
 		}
 
 		&--technologies {
@@ -73,21 +73,20 @@
 			text-transform: uppercase;
 			font-weight: bold;
 			margin: 2rem 0;
-			
 
 			.technologies--container {
 				border: 2px solid #fff;
 				border-radius: 1rem;
 				padding: 1rem;
 				margin: 2rem;
-				animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3.5s reverse both;
+				// animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3.5s reverse both;
 			}
 
 			p {
 				padding: 1rem;
 				display: flex;
 				align-items: center;
-				animation: tracking-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3.5s reverse both;
+				// animation: tracking-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3.5s reverse both;
 
 				.icon {
 					padding-right: 0.5rem;
@@ -95,15 +94,14 @@
 				}
 			}
 		}
-
-		&--btn {
-			animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 4s reverse both;
-		}
+		// &--btn {
+		// 	// animation: tracking-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 4s reverse both;
+		// }
 	}
 
 	&__photo {
 		width: 30%;
-		animation: fade-out 3s linear 1s reverse both;
+		// animation: fade-out 3s linear 1s reverse both;
 
 		&--avatar {
 			border-radius: 50%;
@@ -160,28 +158,28 @@
 	}
 }
 
-@keyframes fade-out {
-	0% {
-		transform: translateZ(0);
-		opacity: 1;
-	}
-	100% {
-		transform: translateZ(-8rem);
-		opacity: 0;
-	}
-}
+// @keyframes fade-out {
+// 	0% {
+// 		transform: translateZ(0);
+// 		opacity: 1;
+// 	}
+// 	100% {
+// 		transform: translateZ(-8rem);
+// 		opacity: 0;
+// 	}
+// }
 
-@keyframes tracking-out {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.5;
-	}
-	100% {
-		opacity: 0;
-	}
-}
+// @keyframes tracking-out {
+// 	0% {
+// 		opacity: 1;
+// 	}
+// 	50% {
+// 		opacity: 0.5;
+// 	}
+// 	100% {
+// 		opacity: 0;
+// 	}
+// }
 
 @keyframes hand-shaking {
 	0% {

@@ -1,3 +1,5 @@
+import './contact.scss'
+
 import React from 'react'
 
 const Contact = () => {

@@ -34,12 +34,12 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li className="nav__item">
-						<Link activeClass="active" className="nav__item--link" to="about" offset={-80} duration={300}>
+						<Link activeClass="active" className="nav__item--link" to="projects" offset={-80} duration={300}>
 							<i class="fa-solid fa-briefcase"></i>Projekty
 						</Link>
 					</li>
 					<li className="nav__item">
-						<Link activeClass="active" className="nav__item--link" to="about" offset={-80} duration={300}>
+						<Link activeClass="active" className="nav__item--link" to="contact" offset={-80} duration={300}>
 							<i class="fa-regular fa-address-card"></i>Kontakt
 						</Link>
 					</li>

@@ -1,6 +1,7 @@
 import './header.scss'
 import React from 'react'
 import BackgroundImg from '../../images/hero-image-1920.jpg'
+import { Link } from 'react-scroll'
 
 const Header = () => {
 	return (
@@ -16,10 +17,14 @@ const Header = () => {
 				<p>Witaj na mojej stronie, jestem</p>
 				<h1>frontend developerem</h1>
 				<button className="btn">
-					<a href="#projects">Projekty</a>
+					<Link activeClass="active" to="projects" offset={-80} duration={300}>
+						Projekty
+					</Link>
 				</button>
 				<button className="btn btn--transparent">
-					<a href="#contact">Kontakt</a>
+					<Link activeClass="active" to="contact" offset={-80} duration={300}>
+						Kontakt
+					</Link>
 				</button>
 			</div>
 		</header>

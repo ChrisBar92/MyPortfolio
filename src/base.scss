@@ -31,6 +31,7 @@ a {
 }
 
 .btn {
+	position: relative;
 	font-size: 2rem;
 	padding: 1.5rem 3rem;
 	border-radius: 0.5rem;
@@ -39,8 +40,9 @@ a {
 	cursor: pointer;
 	border: none;
 	outline: none;
-	position: relative;
 	overflow: hidden;
+	transition: .3s;
+	border: 1px solid #fff;
 }
 .btn::before {
 	content: '';
@@ -49,12 +51,16 @@ a {
 	left: -30%;
 	height: 120%;
 	width: 20%;
-	transition: 0.5s;
+	transition:0.5s;
 	transform: rotate(20deg);
 	background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
 }
 .btn:hover::before {
 	left: 110%;
+}
+
+.btn:hover {
+	transform: scale(1.1);
 }
 
 .section__title {

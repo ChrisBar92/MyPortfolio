@@ -7,20 +7,23 @@ import { SiJavascript } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
 import { SiWebpack } from 'react-icons/si'
 import { AiFillGithub } from 'react-icons/ai'
+import { Link } from 'react-scroll'
 
 const MyData = () => {
 	return (
 		<>
-			<h1 className="about__box--name">
+			<h1 data-aos="zoom-in" data-aos-delay="1000" className="about__box--name">
 				Krzysztof Bartkiewicz<i class="fa-solid fa-hand"></i>
 			</h1>
 
-			<p className="about__box--title">Frontend Developer</p>
-			<div className="about__box--description">
+			<p data-aos="zoom-in" data-aos-delay="1500" className="about__box--title">
+				Frontend Developer
+			</p>
+			<div data-aos="zoom-in" data-aos-delay="2000" className="about__box--description">
 				Jestem kreatywnym frontend developerem pasjonujący się i rozwijający swoje umiejętności oraz wiedzę w
 				następujących technologiach:
 			</div>
-			<div className="about__box--technologies">
+			<div data-aos="zoom-in" data-aos-delay="2500" className="about__box--technologies">
 				<div className="technologies--container">
 					<p>
 						<AiFillHtml5 className="icon" />
@@ -58,8 +61,10 @@ const MyData = () => {
 					</p>
 				</div>
 			</div>
-			<button className="about__box--btn btn">
-				<a href="#contact">Zapytaj mnie</a>
+			<button data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="3000" className="about__box--btn btn">
+				<Link activeClass="active" to="contact" offset={-80} duration={300}>
+					Zapytaj mnie
+				</Link>
 			</button>
 		</>
 	)
