@@ -19,7 +19,7 @@ const Navbar = () => {
 
 	return (
 		<nav className="nav">
-			<div className={color ? 'nav__container container nav__background' : 'nav__container container'}>
+			<div className={color}>
 				<a href="/" className="nav__logo">
 					Portfolio
 					<i class="fa-solid fa-house"></i>

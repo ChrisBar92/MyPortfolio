@@ -23,7 +23,7 @@
 				padding-left: 3rem;
 				transition: transform 0.5s;
 				transform-origin: 80% 50%;
-				animation: hand-shaking 2s linear 0.5s infinite;
+				animation: hand-shaking 2s linear 2s infinite;
 			}
 		}
 
@@ -186,7 +186,7 @@
 		transform: rotate(0deg);
 	}
 	50% {
-		transform: rotate(90deg);
+		transform: rotate(75deg);
 	}
 	100% {
 		transform: rotate(0deg);
