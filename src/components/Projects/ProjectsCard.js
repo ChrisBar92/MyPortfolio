@@ -1,10 +1,7 @@
 import './projects.scss'
 
-import { Link } from 'react-scroll'
-import React from 'react'
-
-// import Aos from 'aos'
-// import 'aos/dist/aos.css'
+// import { Link } from 'react-scroll'
+import React, { useState } from 'react'
 
 const ProjectsCard = props => {
 	return (
@@ -13,11 +10,7 @@ const ProjectsCard = props => {
 			<h2 className="projects__card--heading">{props.heading}</h2>
 			<div className="projects__card--details">
 				<p className="projects__card--details--text">{props.text}</p>
-				<button className="projects__card--details--btn btn">
-					<Link activeClass="active" className="projects__details--link" to="about" offset={-80} duration={300}>
-						Zobacz
-					</Link>
-				</button>
+				<button className="projects__card--details--btn btn">Zobacz</button>
 			</div>
 		</div>
 	)

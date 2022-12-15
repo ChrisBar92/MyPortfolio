@@ -3,10 +3,8 @@ import React from 'react'
 import BackgroundImg from '../../images/hero-image-1920.jpg'
 import { Link } from 'react-scroll'
 
-
 const Header = () => {
 	return (
-		
 		<header className="header">
 			<div className="header__image">
 				<img

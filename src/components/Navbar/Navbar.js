@@ -22,7 +22,7 @@ const Navbar = () => {
 			<div className={color}>
 				<a href="/" className="nav__logo">
 					Portfolio
-					<i class="fa-solid fa-house"></i>
+					<i className="fa-solid fa-house"></i>
 				</a>
 				<div className="nav__burger" onClick={handleClick}>
 					{clicked ? <i class="fa-solid fa-times"></i> : <i className="fas fa-bars"></i>}
@@ -30,17 +30,17 @@ const Navbar = () => {
 				<ul className={clicked ? 'nav__list active' : 'nav__list'}>
 					<li className={'nav__item'}>
 						<Link activeClass="active" className="nav__item--link" to="about" offset={-80} duration={300}>
-							<i class="fa-solid fa-circle-info"></i>O mnie
+							<i className="fa-solid fa-circle-info"></i>O mnie
 						</Link>
 					</li>
 					<li className="nav__item">
 						<Link activeClass="active" className="nav__item--link" to="projects" offset={-80} duration={300}>
-							<i class="fa-solid fa-briefcase"></i>Projekty
+							<i className="fa-solid fa-briefcase"></i>Projekty
 						</Link>
 					</li>
 					<li className="nav__item">
 						<Link activeClass="active" className="nav__item--link" to="contact" offset={-80} duration={300}>
-							<i class="fa-regular fa-address-card"></i>Kontakt
+							<i className="fa-regular fa-address-card"></i>Kontakt
 						</Link>
 					</li>
 					{/* {NavMenu.map(item => {

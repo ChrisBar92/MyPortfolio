@@ -23,13 +23,13 @@ const Footer = props => {
 			<div className="footer__box">
 				<div className="footer__box--sections"></div>
 				<div className="footer__box--icons">
-					<a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+					<a href="https://www.linkedin.com/in/krzysztof-bartkiewicz-4185a3114/" target="_blank" rel="noreferrer">
 						<AiFillLinkedin />
 					</a>
 					<a href="https://www.gmail.com" target="_blank" rel="noreferrer">
 						<CgMail />
 					</a>
-					<a href="https://www.github.com" target="_blank" rel="noreferrer">
+					<a href="https://github.com/ChrisBar92" target="_blank" rel="noreferrer">
 						<AiFillGithub />
 					</a>
 				</div>

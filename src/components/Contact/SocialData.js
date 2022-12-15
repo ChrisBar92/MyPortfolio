@@ -6,20 +6,20 @@ const SocialData = [
 	{
 		icon: <AiFillLinkedin />,
 		title: 'LinkedIn',
-		user: 'user92',
-		url: 'https://pl.linkedin.com',
+		user: 'Krzysztof Bartkiewicz',
+		url: 'https://www.linkedin.com/in/krzysztof-bartkiewicz-4185a3114/',
 	},
 	{
 		icon: <CgMail />,
 		title: 'Gmail',
-		user: 'user92@gmail.com',
+		user: 'bartkiewiczkrzysztof1@gmail.com',
 		url: 'https://www.gmail.com',
 	},
 	{
 		icon: <AiFillGithub />,
 		title: 'Github',
 		user: 'ChrisBar92',
-		url: 'https://www.github.com',
+		url: 'https://github.com/ChrisBar92',
 	},
 ]
 

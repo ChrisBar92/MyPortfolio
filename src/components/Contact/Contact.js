@@ -9,7 +9,7 @@ import Form from './Form'
 const Contact = () => {
 	
 	return (
-		<section className="contact container" id="contact">
+		<section className="contact" id="contact">
 			<div className="contact__box">
 				<div className="contact__box--social">
 					{SocialData.map((item, index) => {

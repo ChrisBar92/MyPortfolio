@@ -13,7 +13,7 @@ const MyData = () => {
 	return (
 		<>
 			<h1 data-aos="zoom-in" data-aos-delay="1000" className="about__box--name">
-				Krzysztof Bartkiewicz<i class="fa-solid fa-hand"></i>
+				Krzysztof Bartkiewicz<i className="fa-solid fa-hand"></i>
 			</h1>
 
 			<p data-aos="zoom-in" data-aos-delay="1500" className="about__box--title">
