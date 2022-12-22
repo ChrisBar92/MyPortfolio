@@ -18,12 +18,11 @@ const Navbar = () => {
 	window.addEventListener('scroll', changeColor)
 
 	return (
-		<nav className="nav">
+		<nav className="nav" id="home">
 			<div className={color}>
-				<a href="/" className="nav__logo">
-					Portfolio
-					<i className="fa-solid fa-house"></i>
-				</a>
+				<Link activeClass="active" className="nav__logo" to="home" duration={300}>
+					Portfolio<i className="fa-solid fa-house"></i>
+				</Link>
 				<div className="nav__burger" onClick={handleClick}>
 					{clicked ? <i class="fa-solid fa-times"></i> : <i className="fas fa-bars"></i>}
 				</div>
