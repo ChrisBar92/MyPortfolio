@@ -26,12 +26,17 @@
 			border-radius: 0.5rem;
 			color: #000;
 			background-color: #cad2c5;
-			overflow: hidden;
 
-			img {
+			&--photo {
+				overflow: hidden;
 				width: 100%;
 				height: 50%;
-				transition: transform 0.3s;
+			}
+
+			img {
+				height: 100%;
+				width: 100%;
+				transition: transform 0.5s;
 			}
 
 			&--heading {
@@ -61,17 +66,15 @@
 			}
 		}
 
-		.projects__card:hover {
-
-			img{
-				transform: scale(1.1);
-			
-			}
-			background-color: rgba(0,0,0,.4);
-			z-index: 10;
-			
+		.projects__card::after {
+			content: '';
 		}
 
+		.projects__card:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
 	}
 }
 
