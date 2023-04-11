@@ -34,7 +34,7 @@ const Footer = props => {
 					</a>
 				</div>
 				<p className="footer__box--text">
-					<span>&copy;</span>2022, Wszystkie prawa zastrzeżone
+					<span>&copy;</span>2023, Wszystkie prawa zastrzeżone
 				</p>
 			</div>
 			<button onClick={top} className={appear}>

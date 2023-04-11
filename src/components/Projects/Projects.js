@@ -16,6 +16,8 @@ const Projects = () => {
 							altsrc={item.altsrc}
 							heading={item.heading}
 							text={item.text}
+							link={item.link}
+							git={item.git}
 						/>
 					)
 				})}

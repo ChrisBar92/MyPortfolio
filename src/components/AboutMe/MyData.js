@@ -5,26 +5,25 @@ import { DiSass } from 'react-icons/di'
 import { BsFillBootstrapFill } from 'react-icons/bs'
 import { SiJavascript } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
-import { SiWebpack } from 'react-icons/si'
+import { SiTypescript } from 'react-icons/si'
 import { AiFillGithub } from 'react-icons/ai'
 import { Link } from 'react-scroll'
 
 const MyData = () => {
 	return (
 		<>
-			<h1 data-aos="zoom-in" data-aos-delay="1000" className="about__box--name">
+			<div data-aos="zoom-in" data-aos-delay="1000" className="about__box-name">
 				Krzysztof Bartkiewicz<i className="fa-solid fa-hand"></i>
-			</h1>
+			</div>
 
-			<p data-aos="zoom-in" data-aos-delay="1500" className="about__box--title">
+			<p data-aos="zoom-in" data-aos-delay="1500" className="about__box-title">
 				Frontend Developer
 			</p>
-			<div data-aos="zoom-in" data-aos-delay="2000" className="about__box--description">
-				Jestem kreatywnym frontend developerem pasjonujący się i rozwijający swoje umiejętności oraz wiedzę w
-				następujących technologiach:
+			<div data-aos="zoom-in" data-aos-delay="2000" className="about__box-description">
+				Jestem kreatywnym, początkującym frontend developerem, który pasjonuje się tworzeniem aplikacji i stron internetowych oraz ogólnie pojętym frontendem. Rozwijam swoje umiejętności w czystym JS, a także we frameworku React, piszę kod w metodologii BEM z użyciem preprocesora Sass. Potrafię również stworzyć prostą stronę przy użyciu Bootstrapa. Dotychczasowe projekty i progres w pisaniu kodu jest dla mnie olbrzymią motywacją do dalszej nauki i rozwiązywania kolejnych napotykanych problemów. Poniżej przedstawiam technologię, w których mam opanowane mocne podstawy:
 			</div>
-			<div data-aos="zoom-in" data-aos-delay="2500" className="about__box--technologies">
-				<div className="technologies--container">
+			<div data-aos="zoom-in" data-aos-delay="2500" className="about__box-technologies">
+				<div className="technologies-container">
 					<p>
 						<AiFillHtml5 className="icon" />
 						HTML
@@ -42,7 +41,7 @@ const MyData = () => {
 						Bootstrap
 					</p>
 				</div>
-				<div className="technologies--container">
+				<div className="technologies-container">
 					<p>
 						<SiJavascript className="icon" />
 						JavaScript
@@ -52,8 +51,8 @@ const MyData = () => {
 						React
 					</p>
 					<p>
-						<SiWebpack className="icon" />
-						Webpack
+						<SiTypescript className="icon" />
+						Typescript
 					</p>
 					<p>
 						<AiFillGithub className="icon" />

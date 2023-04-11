@@ -6,23 +6,23 @@ import { Link } from 'react-scroll'
 const Header = () => {
 	return (
 		<header className="header">
-			<div className="header__image">
+			<div className="header__background">
 				<img
-					className="header__shadow--img"
+					className="header__image"
 					src={BackgroundImg}
 					alt="zaciemnione zdjęcie na całym ekranie monitora pokazujące programującą osobę"
 				/>
 			</div>
 			<div className="header__content">
-				<p>Witaj na mojej stronie, jestem</p>
-				<h1>frontend developerem</h1>
+				<p className='header__text'>Witaj na mojej stronie, jestem początkującym</p>
+				<h1 className='header__title'>frontend developerem</h1>
 				<button className="btn">
-					<Link activeClass="active" to="projects" offset={-80} duration={300}>
+					<Link activeClass="active" to="projects" offset={-100} duration={300}>
 						Projekty
 					</Link>
 				</button>
 				<button className="btn btn--transparent">
-					<Link activeClass="active" to="contact" offset={-80} duration={300}>
+					<Link activeClass="active" to="contact" offset={-100} duration={300}>
 						Kontakt
 					</Link>
 				</button>

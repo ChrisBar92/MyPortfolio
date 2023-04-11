@@ -1,5 +1,4 @@
 import './navbar.scss'
-// import { NavMenu } from './NavMenu'
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 
@@ -24,34 +23,41 @@ const Navbar = () => {
 					Portfolio<i className="fa-solid fa-house"></i>
 				</Link>
 				<div className="nav__burger" onClick={handleClick}>
-					{clickedBurger ? <i class="fa-solid fa-times"></i> : <i className="fas fa-bars"></i>}
+					{clickedBurger ? <i className="fa-solid fa-times"></i> : <i className="fas fa-bars"></i>}
 				</div>
 				<ul className={clickedBurger ? 'nav__list active' : 'nav__list'}>
 					<li className={'nav__item'}>
-						<Link activeClass="active" className="nav__item--link" to="about" offset={-80} duration={300}>
+						<Link activeClass="active" className="nav__link" to="about" offset={-100} duration={300}>
 							<i className="fa-solid fa-circle-info"></i>O mnie
 						</Link>
 					</li>
 					<li className="nav__item">
-						<Link activeClass="active" className="nav__item--link" to="projects" offset={-80} duration={300}>
+						<Link activeClass="active" className="nav__link" to="projects" offset={-100} duration={300}>
 							<i className="fa-solid fa-briefcase"></i>Projekty
 						</Link>
 					</li>
 					<li className="nav__item">
-						<Link activeClass="active" className="nav__item--link" to="contact" offset={-80} duration={300}>
+						<Link activeClass="active" className="nav__link" to="contact" offset={-100} duration={300}>
 							<i className="fa-regular fa-address-card"></i>Kontakt
 						</Link>
 					</li>
-					{/* {NavMenu.map(item => {
-						return (
-							<li key={item.id}>
-								<a href={item.url} className={item.nameClass}>
-									<i className={item.icon}></i>
-									{item.title}
-								</a>
-							</li>
-						)
-					})} */}
+				</ul>
+				<ul className="nav__list--desktop">
+					<li className={'nav__item'}>
+						<Link activeClass="active" className="nav__link" to="about" offset={-100} duration={300}>
+							<i className="fa-solid fa-circle-info"></i>O mnie
+						</Link>
+					</li>
+					<li className="nav__item">
+						<Link activeClass="active" className="nav__link" to="projects" offset={-100} duration={300}>
+							<i className="fa-solid fa-briefcase"></i>Projekty
+						</Link>
+					</li>
+					<li className="nav__item">
+						<Link activeClass="active" className="nav__link" to="contact" offset={-100} duration={300}>
+							<i className="fa-regular fa-address-card"></i>Kontakt
+						</Link>
+					</li>
 				</ul>
 			</div>
 		</nav>

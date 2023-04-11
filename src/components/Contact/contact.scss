@@ -139,6 +139,11 @@
 		}
 		.form {
 			width: 100%;
+
+			input,
+			textarea {
+				max-width: 50rem;
+			}
 		}
 	}
 }
