@@ -7,7 +7,7 @@ const SocialData = [
 		icon: <AiFillLinkedin />,
 		title: 'LinkedIn',
 		user: 'Krzysztof Bartkiewicz',
-		url: 'https://www.linkedin.com/in/krzysztof-bartkiewicz-4185a3114/',
+		url: 'https://www.linkedin.com/in/krzysztof-bartkiewicz/',
 	},
 	{
 		icon: <CgMail />,

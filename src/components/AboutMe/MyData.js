@@ -20,7 +20,7 @@ const MyData = () => {
 				Frontend Developer
 			</p>
 			<div data-aos="zoom-in" data-aos-delay="2000" className="about__box-description">
-				Jestem kreatywnym, początkującym frontend developerem, który pasjonuje się tworzeniem aplikacji i stron internetowych oraz ogólnie pojętym frontendem. Rozwijam swoje umiejętności w czystym JS, a także we frameworku React, piszę kod w metodologii BEM z użyciem preprocesora Sass. Potrafię również stworzyć prostą stronę przy użyciu Bootstrapa. Dotychczasowe projekty i progres w pisaniu kodu jest dla mnie olbrzymią motywacją do dalszej nauki i rozwiązywania kolejnych napotykanych problemów. Poniżej przedstawiam technologię, w których mam opanowane mocne podstawy:
+				Jestem kreatywnym, początkującym frontend developerem, który pasjonuje się tworzeniem aplikacji i stron internetowych oraz ogólnie pojętym frontendem. Rozwijam swoje umiejętności w czystym JS, a także we frameworku React, piszę kod w metodologii BEM z użyciem preprocesora Sass. Potrafię również stworzyć prostą stronę przy użyciu Bootstrapa. Dotychczasowe projekty i progres w pisaniu kodu jest dla mnie olbrzymią motywacją do dalszej nauki i rozwiązywania kolejnych napotykanych problemów. Poniżej przedstawiam technologie, w których mam opanowane mocne podstawy:
 			</div>
 			<div data-aos="zoom-in" data-aos-delay="2500" className="about__box-technologies">
 				<div className="technologies-container">

@@ -27,17 +27,35 @@ const Navbar = () => {
 				</div>
 				<ul className={clickedBurger ? 'nav__list active' : 'nav__list'}>
 					<li className={'nav__item'}>
-						<Link activeClass="active" className="nav__link" to="about" offset={-100} duration={300}>
+						<Link
+							activeClass="active"
+							onClick={handleClick}
+							className="nav__link"
+							to="about"
+							offset={-100}
+							duration={300}>
 							<i className="fa-solid fa-circle-info"></i>O mnie
 						</Link>
 					</li>
 					<li className="nav__item">
-						<Link activeClass="active" className="nav__link" to="projects" offset={-100} duration={300}>
+						<Link
+							activeClass="active"
+							onClick={handleClick}
+							className="nav__link"
+							to="projects"
+							offset={-100}
+							duration={300}>
 							<i className="fa-solid fa-briefcase"></i>Projekty
 						</Link>
 					</li>
 					<li className="nav__item">
-						<Link activeClass="active" className="nav__link" to="contact" offset={-100} duration={300}>
+						<Link
+							activeClass="active"
+							onClick={handleClick}
+							className="nav__link"
+							to="contact"
+							offset={-100}
+							duration={300}>
 							<i className="fa-regular fa-address-card"></i>Kontakt
 						</Link>
 					</li>

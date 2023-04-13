@@ -70,17 +70,17 @@
 
 			&-links {
 				display: flex;
-				justify-content: space-between;
+				justify-content: space-around;
 				width: 100%;
 				padding: 2rem;
 				font-size: 1.6rem;
 			}
 
 			&-link {
-				padding: 1rem;
-				color: #000;
-				background-color: #84a98c;
-				border: 1px solid #000;
+				padding: 1rem 2rem;
+				color: #fff;
+				background-color: #2f3e46;
+				border: 1px solid #fff;
 				border-radius: 1rem;
 			}
 		}
