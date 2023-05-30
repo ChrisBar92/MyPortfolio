@@ -1,4 +1,4 @@
-Welcome to the My Portoflio project page. On this page I show my projects, where you can visit the live page or the code page on Github. You can also read some information about me, why I took up the frontend and what I look like. In the future I will be updating this project by adding new, more advanced projects written in JS or React. This page is responsible, so you can use mobile and desktop to check.
+Welcome to the My Portfolio project page. On this page I show my projects, where you can visit the live page or the code page on Github. You can also read some information about me, why I took up the frontend and what I look like. In the future I will be updating this project by adding new, more advanced projects written in JS or React. This page is responsible, so you can use mobile and desktop to check.
 Below you can see a link to the live site and some screenshots of what it looks like on the mobile and desktop versions.
 
 Preview: https://chrisbar92.github.io/MyPortfolio/
