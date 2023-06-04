@@ -20,7 +20,9 @@
 
 	&__background {
 		background-color: rgba(0, 0, 0, 0.9);
-		transition: 0.5s;
+		transition: background-color 0.5s;
+		border-bottom-left-radius: 4rem;
+		border-bottom-right-radius: 4rem;
 	}
 
 	&__list {

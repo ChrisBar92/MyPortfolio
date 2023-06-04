@@ -1,8 +1,9 @@
 import proj1 from '../../images/weather-1920.jpg'
 import proj2 from '../../images/myportfolio.jpg'
 import proj3 from '../../images/tyber1920.jpg'
-import proj4 from '../../images/ingredients.jpg'
-import proj5 from '../../images/drums-1920.jpg'
+import proj4 from '../../images/fitness-page.jpg'
+import proj5 from '../../images/ingredients.jpg'
+import proj6 from '../../images/drums-1920.jpg'
 
 const ProjectsData = [
 	{
@@ -31,6 +32,14 @@ const ProjectsData = [
 	},
 	{
 		imgsrc: proj4,
+		altsrc: 'zdjęcie strony fitness',
+		heading: 'Fitness Page',
+		text: '	Aplikacja pogodowa umowżliwiająca sprawdzenie temperatury, ciśnienia, siły wiatru, wilgotności i tempreatury odczuwalnej w dowolnym miejscu na świecie. Wyświetlana jest również data, której dana pogoda dotyczy. Daną lokalizację można wpisać używając lub nie polskich znaków.  Projekt ma na celu pokazanie umiejętności korzystania z zewnętrznego API.',
+		link: 'https://chrisbar92.github.io/fitness-page/',
+		git: 'https://github.com/ChrisBar92/fitness-page',
+	},
+	{
+		imgsrc: proj5,
 		altsrc: 'zdjęcie składników do posiłku',
 		heading: 'Recipe App',
 		text: '	Aplikacja do szukania przepisów, dodawania ich do listy ulubionych, a także możliwość sprawdzenia historii otwieranych przepisów. Wyszukiwanie odbywa się poprzez wpisanie całego posiłku lub któregoś ze składników. W projekcie użyto zewnętrzego API, dzięki któremu pobrano wiele informacji, jak choćby rodzaj diety, ilość składników odżywczych czy ilość kalorii.',
@@ -38,7 +47,7 @@ const ProjectsData = [
 		git: 'https://github.com/ChrisBar92/RecipeApp',
 	},
 	{
-		imgsrc: proj5,
+		imgsrc: proj6,
 		altsrc: 'zdjęcie perkusji',
 		heading: 'Drum Machine',
 		text: 'Projekt ten umożliwia symulację gry na perkusji. Użytkownik ma do wyboru 9 przycisków i klikając myszką w dane miejsce, lub za pomocą klawiszy na klawiaturze, naciśnięty element perkusji odtworzy dźwięk. Kilka dźwięków można wciskać jednocześnie. Projekt miał na celu praktykę w JS poprzez dynamiczne tworzenie przycisków i przypisanie każdemu konkretnych dźwięków.',
