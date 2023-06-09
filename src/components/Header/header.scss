@@ -8,11 +8,11 @@
 	}
 
 	&__image {
-		height: 100%;
 		width: 100%;
+		height: 100%;
 		animation: bounce 2s both;
 		background-size: cover;
-		background-position: top;
+		background-position: center;
 	}
 
 	&__background::after {
@@ -22,7 +22,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(0, 0, 0, 0.6);
 	}
 
 	&__content {

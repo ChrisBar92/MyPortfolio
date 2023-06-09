@@ -14,10 +14,10 @@
 		&--avatar {
 			width: 20rem;
 			margin-top: 14rem;
+			margin-bottom: 3rem;
 			border-radius: 50%;
 		}
 	}
-	
 
 	&__box {
 		width: 100%;
@@ -27,44 +27,6 @@
 		padding-bottom: 6rem;
 		color: #fff;
 		order: 2;
-
-		&-name {
-			display: flex;
-			align-items: center;
-			text-align: center;
-			padding: 2rem;
-			font-size: 2.4rem;
-
-			i {
-				margin-right: 3rem;
-				transition: transform 0.5s;
-				transform-origin: 80% 50%;
-				animation: hand-shaking 2s linear 2s infinite;
-			}
-		}
-
-		&-title {
-			position: relative;
-			padding: 1rem;
-			font-size: 2rem;
-		}
-
-		&-title::before,
-		&-title::after {
-			content: '';
-			position: absolute;
-			top: 50%;
-			height: 0.2rem;
-			width: 2rem;
-			background-color: #fff;
-			transform: translateY(-50%);
-		}
-		&-title::before {
-			left: -7%;
-		}
-		&-title::after {
-			right: -7%;
-		}
 
 		&-description {
 			padding: 2rem;
@@ -149,7 +111,6 @@
 
 				i {
 					margin-left: 3rem;
-					
 				}
 			}
 
@@ -178,17 +139,29 @@
 }
 @media screen and (min-width: 768px) {
 	.about {
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0 2rem;
+
+		&__photo {
+			width: 40%;
+			max-width: 30rem;
+			margin-top: 17rem;
+			margin-bottom: 6rem;
+		}
+
 		&__photo--avatar {
-			width: 25rem;
+			width: 30rem;
+			margin: 0;
 		}
 
 		&__box {
-			&-name {
-				padding-top: 5rem;
-			}
+			width: 50%;
+		
 
 			&-description {
-				padding: 3rem 5rem;
+				margin-top: 17rem;
+				padding: 0;
 			}
 		}
 
@@ -200,7 +173,7 @@
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	.about {
 		&__box {
 			&-name {

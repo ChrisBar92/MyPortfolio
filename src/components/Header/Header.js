@@ -1,6 +1,6 @@
 import './header.scss'
 import React from 'react'
-import BackgroundImg from '../../images/hero-image-1920.jpg'
+import BackgroundImg from '../../images/hero-image.jpg'
 import { Link } from 'react-scroll'
 
 const Header = () => {
