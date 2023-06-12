@@ -13,6 +13,7 @@ const ProjectsCard = props => {
 			<h3 className="projects__card-heading">{props.heading}</h3>
 			<div className="projects__card-details">
 				<p className="projects__card-details-text">{props.text}</p>
+				<p className="projects__card-details-tools">{props.tools}</p>
 				<div className="projects__card-details-links">
 					<a href={props.link} target="_blank" className="projects__card-details-link">
 						Zobacz

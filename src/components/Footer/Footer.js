@@ -6,7 +6,7 @@ import { AiFillLinkedin } from 'react-icons/ai'
 import { CgMail } from 'react-icons/cg'
 import { AiFillGithub } from 'react-icons/ai'
 
-const Footer = props => {
+const Footer = () => {
 	const [appear, setAppear] = useState('invisible')
 	const handleScroll = () => {
 		window.scrollY >= 200 ? setAppear('scrollToTop') : setAppear('invisible')

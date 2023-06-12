@@ -24,16 +24,17 @@
 	&__card {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		// justify-content: space-between;
 		align-items: center;
 		width: 90%;
 		max-width: 45rem;
 		height: 70rem;
 		margin: 2rem 0;
 		border: 0.2rem solid #354f52;
-		border-radius: 0.5rem;
+		border-radius: 1rem;
 		color: #000;
 		background-color: #cad2c5;
+		overflow: hidden;
 
 		&:hover {
 			img {
@@ -42,31 +43,44 @@
 		}
 
 		&-photo {
+			height: 30rem;
 			width: 100%;
-			height: 50%;
 			overflow: hidden;
+			border-bottom: 0.1rem solid #000;
 		}
 
 		img {
-			height: 35rem;
+			height: 100%;
 			width: 100%;
 			transition: transform 0.5s;
 		}
 
 		&-heading {
-			padding: 1.5rem 0 0.5rem;
+			padding: 2rem 0;
 			font-size: 2rem;
 		}
 
 		&-details {
 			display: flex;
 			flex-direction: column;
+			justify-content: space-between;
 			align-items: center;
+			height: 33rem;
 
 			&-text {
 				padding: 1rem;
 				font-size: 1.3rem;
 				text-align: justify;
+			}
+
+			&-tools {
+				width: 80%;
+				padding: 1rem;
+				text-align: center;
+				font-size: 1.4rem;
+				font-weight: 600;
+				border: 0.1rem solid #000;
+				border-radius: 2rem;
 			}
 
 			&-links {
@@ -119,12 +133,13 @@
 			flex-wrap: wrap;
 		}
 		&__card {
-			width: 45%;
+			width: 44%;
 			max-width: 45rem;
+			height: 80rem;
 			margin: 2rem;
 
-			&-photo {
-				height: 40%;
+			&-details {
+				height: 42rem;
 			}
 		}
 	}
@@ -135,6 +150,12 @@
 		&__card {
 			width: 35%;
 			max-width: 40rem;
+
+			&-details-tools {
+				font-size: 1.6rem;
+			}
 		}
+
+	
 	}
 }

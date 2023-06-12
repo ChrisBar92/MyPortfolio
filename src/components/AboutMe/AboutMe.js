@@ -8,12 +8,10 @@ import { DiSass } from 'react-icons/di'
 import { BsFillBootstrapFill } from 'react-icons/bs'
 import { SiJavascript } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
-import { SiTypescript } from 'react-icons/si'
 import { AiFillGithub } from 'react-icons/ai'
-import {IoLogoNpm} from 'react-icons/io'
+import { IoLogoNpm } from 'react-icons/io'
 
 import { Link } from 'react-scroll'
-
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -33,9 +31,11 @@ const AboutMe = () => {
 				<div data-aos="zoom-in" data-aos-delay="1000" className="about__box-description">
 					Jestem kreatywnym, początkującym frontend developerem, który pasjonuje się tworzeniem aplikacji i stron
 					internetowych oraz ogólnie pojętym frontendem. Rozwijam swoje umiejętności w czystym JS, a także we frameworku
-					React, piszę kod zachowując metodologię BEM z użyciem preprocesora Sass. Potrafię również stworzyć prostą stronę przy
-					użyciu Bootstrapa. Dotychczasowe projekty i progres w pisaniu kodu są dla mnie olbrzymią motywacją do
-					dalszej nauki i rozwiązywania kolejnych napotykanych problemów. W najbliższym czasie chcę poznać także TypeScript niezbędny do pracy jako Front End Developer. Poniżej przedstawiam technologie oraz narzędzia, w których korzystaniu mam opanowane mocne podstawy:
+					React, piszę kod zachowując metodologię BEM z użyciem preprocesora Sass. Potrafię również stworzyć prostą
+					stronę przy użyciu Bootstrapa. Dotychczasowe projekty i progres w pisaniu kodu są dla mnie olbrzymią motywacją
+					do dalszej nauki i rozwiązywania kolejnych napotykanych problemów. W najbliższym czasie chcę poznać także
+					TypeScript niezbędny do pracy jako Front End Developer. Poniżej przedstawiam technologie oraz narzędzia, w
+					których korzystaniu mam opanowane mocne podstawy:
 				</div>
 			</div>
 			<div data-aos="zoom-in" data-aos-delay="1500" className="about__box-technologies">

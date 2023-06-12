@@ -19,9 +19,7 @@ const Navbar = () => {
 	return (
 		<nav className="nav" id="home">
 			<div className={color}>
-				<Link activeClass="active" className="nav__logo" to="home" duration={300}>
-					Portfolio<i className="fa-solid fa-house"></i>
-				</Link>
+				<div className="nav__logo">KB Portfolio</div>
 				<div className="nav__burger" onClick={handleClick}>
 					{clickedBurger ? <i className="fa-solid fa-times"></i> : <i className="fas fa-bars"></i>}
 				</div>

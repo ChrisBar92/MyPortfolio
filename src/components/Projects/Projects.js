@@ -16,6 +16,7 @@ const Projects = () => {
 							altsrc={item.altsrc}
 							heading={item.heading}
 							text={item.text}
+							tools={item.tools}
 							link={item.link}
 							git={item.git}
 						/>

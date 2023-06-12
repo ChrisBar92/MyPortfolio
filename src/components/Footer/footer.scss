@@ -3,7 +3,6 @@
 	text-align: center;
 	background-color: #84a98c;
 	color: #fff;
-	
 
 	&__box {
 		height: 100%;
@@ -12,20 +11,25 @@
 		align-items: center;
 		justify-content: center;
 
-        &--icons {
-            font-size: 4rem;
-            display: flex;
-            flex-direction: row;
+		&--icons {
+			font-size: 4rem;
+			display: flex;
+			flex-direction: row;
 
-            a{
-                padding: 2rem 3rem 0;
-            }
-        }
+			a {
+				padding: 2rem 3rem 0;
+				transition: color 0.3s;
 
-        &--text {
-            font-size: 1.6rem;
-            padding-bottom: 2rem;
-        }
+				&:hover {
+					color: #2f3e46;
+				}
+			}
+		}
+
+		&--text {
+			font-size: 1.6rem;
+			padding-bottom: 2rem;
+		}
 	}
 }
 
