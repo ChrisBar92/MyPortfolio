@@ -4,8 +4,8 @@ Below you can see a link to the live site and some screenshots of what it looks 
 Preview: https://chrisbar92.github.io/MyPortfolio/
 
 Desktop version: 
-![image](https://user-images.githubusercontent.com/114155819/231887274-5cc28087-b57a-4e03-b6c7-6b403a613208.png)
-![image](https://user-images.githubusercontent.com/114155819/231887336-48f04784-cff3-4063-a28b-d41fd3329644.png)
+![image](https://github.com/ChrisBar92/MyPortfolio/assets/114155819/61fa10a9-62cb-4cda-9caa-0dda0677e283)
+![image](https://github.com/ChrisBar92/MyPortfolio/assets/114155819/4083eed9-2581-46b9-8d3d-49e9e1df8beb)
 
 Mobile version: 
 
